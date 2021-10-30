@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" href="./assets/img/icon.ico" type="image/ico" sizes="16x16">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+    
+    <title>Clone Twitter</title>
+</head>
+<body>
+    <!-- CABEÇALHO -->
+    <div class="container">
+        <header class="cabecalho">
+            <figure class="cabecalho__logo">
+                <img src="./assets/img/bird 1.svg" alt="Logo twitter">
+                <figcaption hidden>Logo Twitter</figcaption>
+            </figure>
+    
+            <nav>
+                <ul class="cabecalho__menu__lista">
+                    <li class="cabecalho__menuItem">
+                        <img src="./assets/img/Home.png" alt="página inicial">
+                        <a href="">Página inicial</a>
+                    </li>
+                    <li class="cabecalho__menuItem">
+                        <img src="./assets/img/Hashtag.png" alt="explorar">
+                        <a href="">Explorar</a>
+                    </li>
+                    <li class="cabecalho__menuItem">
+                        <img src="./assets/img/Notification.png" alt="notificação">
+                        <a href="">Notificações</a>
+                    </li>
+                    <li class="cabecalho__menuItem">
+                        <img src="./assets/img/Group.png" alt="mensagem">
+                        <a href="">Mensagens</a>
+                    </li>
+                    <li class="cabecalho__menuItem">
+                        <img src="./assets/img/Group (1).png" alt="itens salvos">
+                        <a href="">Itens salvos</a>
+                    </li>
+                    <li class="cabecalho__menuItem">
+                        <img src="./assets/img/Group (2).png" alt="listas">
+                        <a href="">Listas</a>
+                    </li>
+                    <li class="cabecalho__menuItem">
+                        <img class="cabecalho__180" src="./assets/img/eu_3d.jpg" alt="perfil">
+                        <a href="">Perfil</a>
+                    </li>
+                    <li class="cabecalho__menuItem">
+                        <img src="./assets/img/Group (3).png" alt="mais">
+                        <a href="">Mais</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main class="conteudoPrincipal">
+            <h3 class="conteudoPrincipal__titulo">Home</h3>
+    
+            <form action="#" method="post">
+                <textarea name="textoTweet" id="" cols="30" rows="5" placeholder="O que está acontecendo?"></textarea>
+                <button type="submit">Tweetar</button>
+            </form>
+        <!-- FEED DE NOTICIAS -->
+        <section class="conteudoPrincipal__feed">
+                <!-- LISTA DE NOTICIAS -->
+            <ul class="conteudoPrincipal__listaTweets">
+                <li class="conteudoPrincipal__tweet">
+                    <img class="tweet__fotoPerfil" src="./assets/img/eu_2d.jpg" alt="foto usuario">
+                    <div class="tweet__conteudo">
+                        <h2>Tammy</h2>
+                        <span>@tammybeira 14s</span>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempus elementum
+                            urna, eu semper erat. Cras condimentum, dui ut sodales egestas, odio tortor 
+                            rutrum nisl.
+                        </p>
+                    </div>
+                </li><!--conteudoPrincipal__tweet-->
+            </ul>
+        </section>
+        </main>
+    
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

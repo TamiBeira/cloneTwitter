@@ -1,0 +1,162 @@
+/* RESET */
+html,body,div,header,figure,img,figcaption,nav,ul,li,a,textarea,main,form,section,span,p,h1,h2,h3{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    resize: none;
+    font-family: 'Roboto', sans-serif;
+}
+/*VARIAVEIS*/
+:root{
+    --corFundoPrincipal: #ffffff;
+    --corFontePrincipal: #000000;
+    --corBotaoFonte: #1da1f2;
+    --corBotaoFonteHover:#235472;
+    --corBorda:#e7ecf0;
+    --corSpan: #9da0a3;
+}
+/* BODY */
+body{    
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    /* margin: 0 auto; */
+    display: flex;
+    justify-content: center;
+}
+/* CABEÇALHO */
+.cabecalho{
+    flex-basis: 15%;
+}
+.cabecalho__logo{
+    padding: 10px;
+}
+.cabecalho__logo figcaption{
+    display: none;
+}
+.cabecalho__menuItem{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.cabecalho__menuItem img{
+    max-width: 25px;
+    margin-right: 10px;
+}
+.cabecalho__180{
+    border-radius: 180px;
+}
+
+.cabecalho__menuItem a{
+    color: var(--corFontePrincipal);
+    text-decoration: none;
+}
+.cabecalho__menuItem a:hover{
+    color: var(--corBotaoFonte);
+}
+/* CONTEUDO PRINCIPAL */
+.conteudoPrincipal{
+    flex-basis: 85%;
+    max-width: 750px;
+    border-left: 1px solid var(--corBorda);
+    border-right: 1px solid var(--corBorda);
+}
+.conteudoPrincipal form{
+    border-bottom: 10px solid var(--corBorda);
+}
+.conteudoPrincipal form textarea{
+    border: none;
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+}
+.conteudoPrincipal form button{
+    background-color: var(--corBotaoFonte);
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    width: 100px;
+
+    cursor: pointer;
+}
+.conteudoPrincipal form button:hover{
+    background-color: var(--corBotaoFonteHover);
+}
+.conteudoPrincipal__titulo{
+    padding: 20px;
+    border-bottom: 1px solid var(--corBorda);
+    font-weight: bold;
+}
+.conteudoPrincipal__tweet{
+    display: flex;
+    padding: 20px;
+
+    border: 1px solid var(--corBorda);
+}
+.tweet__fotoPerfil{
+    max-height: 40px;
+    max-width: 40px;
+    margin-right: 10px;
+    border-radius: 180px;
+}
+.tweet__conteudo{
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 25px;
+}
+.tweet__conteudo h2{
+    font-size: 18px;
+    margin-right:5px;
+    font-weight: bold;
+}
+.tweet__conteudo span{
+    color: var(--corSpan);
+    font-size: 15px;
+}
+.tweet__conteudo p{
+    width: 100%;
+}
+
+/*RESPONSIVO*/
+@media only screen and (min-width:280px) and (max-width:630px) {
+    .cabecalho__logo {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+    .cabecalho__menuItem{
+        justify-content: center;
+    }
+    .cabecalho__menuItem a{
+        display: none;
+    }
+    .cabecalho__menuItem img{
+        margin: 0;
+    }
+    .cabecalho__menu__lista{
+        padding: 10px;
+    }
+    .conteudoPrincipal form button{
+        margin: 0 0 10px 10px;
+    }
+
+}
+
+@media only screen and (max-width:768px){
+    .cabecalho__menuItem a{
+        font-size: 14px;
+    }
+    .conteudoPrincipal form textarea{
+        width: 75%;
+    }
+}
