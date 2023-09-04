@@ -23,4 +23,4 @@ Este repositório contém um projeto de clone do front-end da popular rede socia
 3. Explore a interface do usuário do Twitter clone.
 4. Experimente as funcionalidades interativas, como postar tweets e interagir com outros usuários.
 
-
+![Captura de tela 2023-09-04 134844](https://github.com/TamiBeira/cloneTwitter/assets/55815968/6a1db523-0e13-4b4b-ba05-3e1ce099212d)
